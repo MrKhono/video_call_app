@@ -177,88 +177,88 @@ function initClient() {
 
     if (!DetectRTC.isMobileDevice) {
         refreshMainButtonsToolTipPlacement();
-        setTippy('closeEmojiPickerContainer', 'Close', 'bottom');
-        setTippy('mySettingsCloseBtn', 'Close', 'bottom');
+        setTippy('closeEmojiPickerContainer', (lang && lang.closeEmojiPickerContainer) || 'Close', 'bottom');
+        setTippy('mySettingsCloseBtn', (lang && lang.mySettingsCloseBtn) || 'Close', 'bottom');
         setTippy(
-            'switchPushToTalk',
+            'switchPushToTalk',  (lang && lang.switchPushToTalk) ||
             'If Active, When SpaceBar keydown the microphone will be resumed, on keyup will be paused, like a walkie-talkie.',
             'right',
         );
-        setTippy('lobbyAcceptAllBtn', 'Accept', 'top');
-        setTippy('lobbyRejectAllBtn', 'Reject', 'top');
+        setTippy('lobbyAcceptAllBtn', (lang && lang.lobbyAcceptAllBtn) || 'Accept', 'top');
+        setTippy('lobbyRejectAllBtn', (lang && lang.lobbyRejectAllBtn) || 'Reject', 'top');
         setTippy(
-            'switchBroadcasting',
+            'switchBroadcasting', (lang && lang.switchBroadcasting) ||
             'Broadcasting is the dissemination of audio or video content to a large audience (one to many)',
             'right',
         );
         setTippy(
-            'switchLobby',
+            'switchLobby', (lang && lang.switchLobby) ||
             'Lobby mode lets you protect your meeting by only allowing people to enter after a formal approval by a moderator',
             'right',
         );
-        setTippy('switchPitchBar', 'Toggle audio pitch bar', 'right');
-        setTippy('switchSounds', 'Toggle the sounds notifications', 'right');
-        setTippy('switchShare', "Show 'Share Room' popup on join", 'right');
-        setTippy('roomId', 'Room name (click to copy)', 'right');
-        setTippy('sessionTime', 'Session time', 'right');
-        setTippy('recordingImage', 'Toggle recording', 'right');
+        setTippy('switchPitchBar',  (lang && lang.switchPitchBar) || 'Toggle audio pitch bar', 'right');
+        setTippy('switchSounds', (lang && lang.switchSounds) || 'Toggle the sounds notifications', 'right');
+        setTippy('switchShare', (lang && lang.switchShare) ||  "Show 'Share Room' popup on join", 'right');
+        setTippy('roomId', (lang && lang.roomId) || 'Room name (click to copy)', 'right');
+        setTippy('sessionTime',  (lang && lang.sessionTime) || 'Session time', 'right');
+        setTippy('recordingImage', (lang && lang.recordingImage) || 'Toggle recording', 'right');
         setTippy(
-            'switchHostOnlyRecording',
+            'switchHostOnlyRecording', (lang && lang.switchHostOnlyRecording) ||
             'Only the host (presenter) has the capability to record the meeting',
             'right',
         );
         setTippy(
-            'switchH264Recording',
+            'switchH264Recording', (lang && lang.switchH264Recording) ||
             'Prioritize h.264 with AAC or h.264 with Opus codecs over VP8 with Opus or VP9 with Opus codecs',
             'right',
         );
-        setTippy('whiteboardGhostButton', 'Toggle transparent background', 'bottom');
-        setTippy('wbBackgroundColorEl', 'Background color', 'bottom');
-        setTippy('wbDrawingColorEl', 'Drawing color', 'bottom');
-        setTippy('whiteboardPencilBtn', 'Drawing mode', 'bottom');
-        setTippy('whiteboardObjectBtn', 'Object mode', 'bottom');
-        setTippy('whiteboardUndoBtn', 'Undo', 'bottom');
-        setTippy('whiteboardRedoBtn', 'Redo', 'bottom');
-        setTippy('whiteboardImgFileBtn', 'Add image file', 'bottom');
-        setTippy('whiteboardPdfFileBtn', 'Add pdf file', 'bottom');
-        setTippy('whiteboardImgUrlBtn', 'Add image url', 'bottom');
-        setTippy('whiteboardTextBtn', 'Add text', 'bottom');
-        setTippy('whiteboardLineBtn', 'Add line', 'bottom');
-        setTippy('whiteboardRectBtn', 'Add rectangle', 'bottom');
-        setTippy('whiteboardTriangleBtn', 'Add triangle', 'bottom');
-        setTippy('whiteboardCircleBtn', 'Add circle', 'bottom');
-        setTippy('whiteboardSaveBtn', 'Save', 'bottom');
-        setTippy('whiteboardEraserBtn', 'Eraser', 'bottom');
-        setTippy('whiteboardCleanBtn', 'Clean', 'bottom');
-        setTippy('whiteboardLockButton', 'If enabled, participants cannot interact', 'right');
-        setTippy('whiteboardCloseBtn', 'Close', 'right');
-        setTippy('chatCleanTextButton', 'Clean', 'top');
-        setTippy('chatPasteButton', 'Paste', 'top');
-        setTippy('chatSendButton', 'Send', 'top');
-        setTippy('showChatOnMsg', 'Show chat on new message comes', 'bottom');
-        setTippy('speechIncomingMsg', 'Speech the incoming messages', 'bottom');
-        setTippy('chatSpeechStartButton', 'Start speech recognition', 'top');
-        setTippy('chatSpeechStopButton', 'Stop speech recognition', 'top');
-        setTippy('chatEmojiButton', 'Emoji', 'top');
-        setTippy('chatMarkdownButton', 'Markdown', 'top');
-        setTippy('chatCloseButton', 'Close', 'bottom');
-        setTippy('chatTogglePin', 'Toggle pin', 'bottom');
-        setTippy('chatHideParticipantsList', 'Hide', 'bottom');
-        setTippy('chatShowParticipantsList', 'Toggle participants list', 'bottom');
-        setTippy('chatMaxButton', 'Maximize', 'bottom');
-        setTippy('chatMinButton', 'Minimize', 'bottom');
-        setTippy('participantsSaveBtn', 'Save participants info', 'bottom');
-        setTippy('participantsRaiseHandBtn', 'Toggle raise hands', 'bottom');
-        setTippy('participantsUnreadMessagesBtn', 'Toggle unread messages', 'bottom');
-        setTippy('transcriptionCloseBtn', 'Close', 'bottom');
-        setTippy('transcriptionTogglePinBtn', 'Toggle pin', 'bottom');
-        setTippy('transcriptionMaxBtn', 'Maximize', 'bottom');
-        setTippy('transcriptionMinBtn', 'Minimize', 'bottom');
-        setTippy('transcriptionSpeechStatus', 'Status', 'bottom');
-        setTippy('transcriptShowOnMsg', 'Show transcript on new message comes', 'bottom');
-        setTippy('transcriptPersistentMode', 'Prevent stopping in the absence of speech', 'bottom');
-        setTippy('transcriptionSpeechStart', 'Start transcription', 'top');
-        setTippy('transcriptionSpeechStop', 'Stop transcription', 'top');
+        setTippy('whiteboardGhostButton', (lang && lang.whiteBoardGhostButton) || 'Toggle transparent background', 'bottom');
+        setTippy('wbBackgroundColorEl', (lang && lang.wbBackgroundColorEl) || 'Background color', 'bottom');
+        setTippy('wbDrawingColorEl',  (lang && lang.wbDrawingColorEl) ||  'Drawing color', 'bottom');
+        setTippy('whiteboardPencilBtn', (lang && lang.whiteBoardPencilBtn) || 'Drawing mode', 'bottom');
+        setTippy('whiteboardObjectBtn',  (lang && lang.whiteBoardObjectBtn) || 'Object mode', 'bottom');
+        setTippy('whiteboardUndoBtn', (lang && lang.whiteBoardUndoBtn) || 'Undo', 'bottom');
+        setTippy('whiteboardRedoBtn', (lang && lang.whiteBoardRedoBtn) || 'Redo', 'bottom');
+        setTippy('whiteboardImgFileBtn', (lang && lang.whiteBoardImgFileBtn) || 'Add image file', 'bottom');
+        setTippy('whiteboardPdfFileBtn', (lang && lang.whiteBoardPdfFileBtn) || 'Add pdf file', 'bottom');
+        setTippy('whiteboardImgUrlBtn', (lang && lang.whiteBoardImgUrlBtn) || 'Add image url', 'bottom');
+        setTippy('whiteboardTextBtn', (lang && lang.whiteBoardTextBtn) || 'Add text', 'bottom');
+        setTippy('whiteboardLineBtn', (lang && lang.whiteBoardLineBtn) || 'Add line', 'bottom');
+        setTippy('whiteboardRectBtn', (lang && lang.whiteBoardRecBtn) || 'Add rectangle', 'bottom');
+        setTippy('whiteboardTriangleBtn', (lang && lang.whiteBoardTriangleBtn) || 'Add triangle', 'bottom');
+        setTippy('whiteboardCircleBtn', (lang && lang.whiteBoardCircleBtn) || 'Add circle', 'bottom');
+        setTippy('whiteboardSaveBtn', (lang && lang.whiteBoardSaveBtn) || 'Save', 'bottom');
+        setTippy('whiteboardEraserBtn',(lang && lang.whiteBoardEraserBtn) || 'Eraser', 'bottom');
+        setTippy('whiteboardCleanBtn', (lang && lang.whiteBoardCleanBtn) || 'Clean', 'bottom');
+        setTippy('whiteboardLockButton', (lang && lang.whiteBoardLockBtn) || 'If enabled, participants cannot interact', 'right');
+        setTippy('whiteboardCloseBtn', (lang && lang.whiteBoardCloseBtn) || 'Close', 'right');
+        setTippy('chatCleanTextButton', (lang && lang.chatCleanTextBtn) || 'Clean', 'top');
+        setTippy('chatPasteButton', (lang && lang.chatPasteBtn) || 'Paste', 'top');
+        setTippy('chatSendButton',  (lang && lang.chatSendBtn) || 'Send', 'top');
+        setTippy('showChatOnMsg', (lang && lang.showChatOnMsg) || 'Show chat on new message comes', 'bottom');
+        setTippy('speechIncomingMsg', (lang && lang.speechIncomingMsg) || 'Speech the incoming messages', 'bottom');
+        setTippy('chatSpeechStartButton', (lang && lang.chatSpeechStartButton) || 'Start speech recognition', 'top');
+        setTippy('chatSpeechStopButton', (lang && lang.chatSpeechStopButton) || 'Stop speech recognition', 'top');
+        setTippy('chatEmojiButton', (lang && lang.chatEmojiButton) || 'Emoji', 'top');
+        setTippy('chatMarkdownButton',(lang && lang.chatMarkdownButton) || 'Markdown', 'top');
+        setTippy('chatCloseButton', (lang && lang.chatCloseButton) || 'Close', 'bottom');
+        setTippy('chatTogglePin', (lang && lang.chatTogglePin) || 'Toggle pin', 'bottom');
+        setTippy('chatHideParticipantsList', (lang && lang.chatHideParticipantsList) || 'Hide', 'bottom');
+        setTippy('chatShowParticipantsList',  (lang && lang.chatShowParticipantsList) || 'Toggle participants list', 'bottom');
+        setTippy('chatMaxButton', (lang && lang.chatMaxButton) || 'Maximize', 'bottom');
+        setTippy('chatMinButton', (lang && lang.chatMinButton) || 'Minimize', 'bottom');
+        setTippy('participantsSaveBtn', (lang && lang.participantsSaveBtn) || 'Save participants info', 'bottom');
+        setTippy('participantsRaiseHandBtn', (lang && lang.participantsRaiseHandBtn) || 'Toggle raise hands', 'bottom');
+        setTippy('participantsUnreadMessagesBtn', (lang && lang.participantsUnreadMessagesBtn) || 'Toggle unread messages', 'bottom');
+        setTippy('transcriptionCloseBtn', (lang && lang.transcriptionCloseBtn) || 'Close', 'bottom');
+        setTippy('transcriptionTogglePinBtn', (lang && lang.transcriptionTogglePinBtn) || 'Toggle pin', 'bottom');
+        setTippy('transcriptionMaxBtn', (lang && lang.transcriptionMaxBtn) || 'Maximize', 'bottom');
+        setTippy('transcriptionMinBtn', (lang && lang.transcriptionMinBtn) || 'Minimize', 'bottom');
+        setTippy('transcriptionSpeechStatus', (lang && lang.transcriptionSpeechStatus) || 'Status', 'bottom');
+        setTippy('transcriptShowOnMsg', (lang && lang.transcriptShowOnMsg) || 'Show transcript on new message comes', 'bottom');
+        setTippy('transcriptPersistentMode',  (lang && lang.transcriptionPersistentMode) || 'Prevent stopping in the absence of speech', 'bottom');
+        setTippy('transcriptionSpeechStart', (lang && lang.transcriptionSpeechStart) || 'Start transcription', 'top');
+        setTippy('transcriptionSpeechStop', (lang && lang.transcriptionSpeechStop) || 'Stop transcription', 'top');
     }
     setupWhiteboard();
     initEnumerateDevices();
@@ -271,26 +271,26 @@ function initClient() {
 function refreshMainButtonsToolTipPlacement() {
     if (!DetectRTC.isMobileDevice) {
         const placement = BtnsBarPosition.options[BtnsBarPosition.selectedIndex].value == 'vertical' ? 'right' : 'top';
-        setTippy('shareButton', 'Share room', placement);
-        setTippy('hideMeButton', 'Toggle hide self view', placement);
-        setTippy('startAudioButton', 'Start the audio', placement);
-        setTippy('stopAudioButton', 'Stop the audio', placement);
-        setTippy('startVideoButton', 'Start the video', placement);
-        setTippy('stopVideoButton', 'Stop the video', placement);
-        setTippy('startScreenButton', 'Start screen share', placement);
-        setTippy('stopScreenButton', 'Stop screen share', placement);
-        setTippy('startRecButton', 'Start recording', placement);
-        setTippy('stopRecButton', 'Stop recording', placement);
-        setTippy('raiseHandButton', 'Raise your hand', placement);
-        setTippy('lowerHandButton', 'Lower your hand', placement);
-        setTippy('emojiRoomButton', 'Toggle emoji reaction', placement);
-        setTippy('swapCameraButton', 'Swap the camera', placement);
-        setTippy('chatButton', 'Toggle the chat', placement);
-        setTippy('transcriptionButton', 'Toggle transcription', placement);
-        setTippy('whiteboardButton', 'Toggle the whiteboard', placement);
-        setTippy('settingsButton', 'Toggle the settings', placement);
-        setTippy('aboutButton', 'About this project', placement);
-        setTippy('exitButton', 'Leave room', placement);
+        setTippy('shareButton', (lang && lang.share_room) || 'Share button' , placement);
+        setTippy('hideMeButton', (lang && lang.toggle_hide) ||  'Toggle hide self view', placement);
+        setTippy('startAudioButton',  (lang && lang.start_audio) || 'Start the audio', placement);
+        setTippy('stopAudioButton', (lang && lang.stop_audio) || 'Stop the audio', placement);
+        setTippy('startVideoButton',(lang && lang.start_video) || 'Start the video', placement);
+        setTippy('stopVideoButton', (lang && lang.stop_video) || 'Stop the video', placement);
+        setTippy('startScreenButton', (lang && lang.startScreenShare) || 'Start screen share', placement);
+        setTippy('stopScreenButton', (lang && lang.stopScreenShare) || 'Stop screen share', placement);
+        setTippy('startRecButton', (lang && lang.startRecButton) || 'Start recording', placement);
+        setTippy('stopRecButton', (lang && lang.stopRecButton) || 'Stop recording', placement);
+        setTippy('raiseHandButton', (lang && lang.raiseHandButton) || 'Raise your hand', placement);
+        setTippy('lowerHandButton', (lang && lang.lowerHandButton) || 'Lower your hand', placement);
+        setTippy('emojiRoomButton', (lang && lang.emojiRoomButton) || 'Toggle emoji reaction', placement);
+        setTippy('swapCameraButton', (lang && lang.swapCameraButton) || 'Swap the camera', placement);
+        setTippy('chatButton', (lang && lang.chatButton) || 'Toggle the chat', placement);
+        setTippy('transcriptionButton', (lang && lang.transcriptionButton) || 'Toggle transcription', placement);
+        setTippy('whiteboardButton', (lang && lang.whiteboardButton) || 'Toggle the whiteboard', placement);
+        setTippy('settingsButton', (lang && lang.settingsButton) || 'Toggle the settings', placement);
+        setTippy('aboutButton', (lang && lang.aboutButton) || 'About this project', placement);
+        setTippy('exitButton', (lang && lang.exitButton) || 'Leave room', placement);
     }
 }
 
